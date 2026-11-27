@@ -1,5 +1,7 @@
 # Getty Images — Metadata Rules & Best Practices
 
+> **Under review (November 2026):** parts of this file contradict `getty-keyword-lessons.md`: the dateline format, keyword count, `Colour Image`, location keywords and `Day`/`Daytime`. See [hub/review-2026-11.md §1](../hub/review-2026-11.md#1-getty-rules-one-rulebook). Until that's settled, the Getty Images Portfolio project's own instructions take precedence.
+
 ## TITLES
 
 ### Rules

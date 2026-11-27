@@ -1,58 +1,13 @@
-# Travel Blog — Format & Visual Identity
+# On Foot blog — format
 
-## Overview
-HTML travel blog pages hosted on GitHub Pages. Each page documents a walking tour or city visit, formatted from transcribed audio guides.
+The blog's own README is the authority on how posts are built: https://github.com/gpmdyg9b4z-spec/on-foot-blog#readme. This page only summarises it.
 
----
+- **Site:** https://gpmdyg9b4z-spec.github.io/on-foot-blog/ (repo `on-foot-blog`, GitHub Pages from `main`)
+- **Posts:** `_posts/<slug>.html`. The slug is `<place>-<year>`, e.g. `krakow-jewish-quarter-2026`. Each post carries a `walk-meta` JSON block (date, place code, themes, series, card text) that drives the homepage, filters, "More walks", the sitemap and the RSS feed.
+- **Styles:** the shared `assets/post.css`. A post's own `<style>` holds only overrides, such as the header watermark glyph.
+- **Writing:** British English. Polished but unstuffy. Follows the walk stop by stop, with story-boxes, key-facts and blockquotes. Disputed claims are flagged.
+- **Privacy:** guides, volunteers and members of the public are never named. The tour organisation can be named. Posts never mention recordings or transcripts.
+- **Photos:** a 1600px copy in `images/<slug>/`, with 800px and 1200px copies made by the Action. Each links to its Getty Images page, credit `Sergio Amiti / Getty Images`. An optional `card.jpg` (960×640) is used for the homepage card.
+- **Two ways in:** upload a finished post, or push notes to `_notes/<slug>.txt` and the Action writes the post with Claude.
 
-## Visual Identity
-
-### Typography
-- **Body / headings:** Cormorant Garamond (Google Fonts)
-- **Accent / captions:** companion serif or italic variant
-
-### Colour Palette
-- **Base:** sepia tones, warm off-whites
-- **Accent:** location-specific colour (varies per destination)
-- Consistent warm, editorial feel across all pages
-
-### Layout
-- Single-column, generous margins
-- Section headers with decorative rules
-- Pull quotes in larger italic type
-- Image captions in smaller, muted type
-
----
-
-## Page Structure
-
-```html
-<!-- Standard page structure -->
-1. Header — location name, date, tour operator
-2. Introduction — overview paragraph
-3. Tour sections — each stop/landmark as a subsection
-4. Closing — reflections or practical notes
-```
-
----
-
-## Source Material
-Pages are created from:
-1. Audio tour transcripts (recorded during tour)
-2. Tour guide name and operator credited
-3. Notes formatted as polished prose, not raw transcript
-
----
-
-## Completed Pages
-- **Krakow — Jewish Quarter** (Walkative! tours, guide: Jacob)
-- **Krakow — Old Town** (Walkative! tours, guide: Iza)
-- **Algeria — Tipaza ruins** (city walk)
-- **Algeria — Algiers** (city walk)
-
----
-
-## GitHub Pages Hosting
-- Repo: `gpmdyg9b4z-spec.github.io`
-- Each destination as a separate HTML file
-- Self-contained: CSS inline or in `<style>` block, no external dependencies except Google Fonts
+Place codes: `london/central|n|nw|e|se|sw|w`, `uk/<county>`, `abroad/<country>`. Themes and series are listed in the blog README.

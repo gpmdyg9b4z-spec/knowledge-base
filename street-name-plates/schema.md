@@ -12,18 +12,26 @@ An archival photography and cartographic project documenting historic London str
 
 ## Dataset Schema
 
-```json
-{
-  "id": "unique-identifier",
-  "street_name": "Full Street Name",
-  "borough": "Metropolitan Borough of [Name]",
-  "plate_material": "controlled-vocabulary-term",
-  "lat": 51.4950,
-  "lng": -0.1753,
-  "notes": "Optional cross-reference or description",
-  "photo_filename": "DSC_0001.jpg"
-}
-```
+As found in the published map (`index.html`, 253 entries, November 2026). The master copy is `plates_data.json` on the T7.
+
+| Field | Example / notes |
+|---|---|
+| `street_name` | `Fitzjohn's Avenue` |
+| `suffix` | street-type suffix as shown on the plate |
+| `borough` | short pre-1965 name as used on the map, e.g. `Hampstead`, `St Pancras`, `Holborn` (see note below) |
+| `plate_material` | controlled vocabulary below |
+| `era`, `era_range` | dating of the plate |
+| `condition` | physical condition |
+| `font_style` | lettering style |
+| `bg_colour`, `text_colour`, `border_colour` | plate colours, used to draw the map marker |
+| `lat`, `lng` | position |
+| `filename`, `image_path` | camera filename and published image path |
+| `trivia_title`, `trivia` | short story for the popup |
+| `notes` | optional, e.g. a cross-reference to another plate on the same street (184 of 253 have notes) |
+
+Proposed: `getty_id`, the Getty asset ID where the plate is on Getty, so the popup can link to it (see hub backlog).
+
+**Borough note:** the map uses short names (`Hampstead`), not `Metropolitan Borough of Hampstead`. A few entries use names that weren't pre-1965 metropolitan boroughs: `Clapham` (part of the Metropolitan Borough of Wandsworth), `Haringey` (created 1965) and `Leyton` (a municipal borough in Essex). Decision pending; see the hub backlog.
 
 ---
 
