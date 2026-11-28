@@ -1,5 +1,7 @@
 # Getty Images — Submission Workflow
 
+> **November 2026:** step 2 is now done in the claude.ai **Getty Images Portfolio** project. The Getty Metadata Studio artifact (`photo-metadata-tool`) is retired. The project's instructions are the current rules.
+
 ## Overview
 LR Classic → Getty Metadata Studio → ExifTool (auto) → LR/Transporter → LR full-res export → DeepMeta → Getty ESP
 
