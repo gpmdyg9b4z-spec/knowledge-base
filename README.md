@@ -7,6 +7,7 @@ Cross-project coordination for the Getty portfolio, the On Foot blog, London Lis
 - [`hub/projects.md`](hub/projects.md) — how the projects connect, and where shared vocabularies live
 - [`hub/backlog.md`](hub/backlog.md) — ranked to-do list and the decisions waiting on Sergio
 - [`hub/review-2026-11.md`](hub/review-2026-11.md) — workflow review, November 2026
+- [`hub/plan-2026-11-28.md`](hub/plan-2026-11-28.md) — plan: licences and releases, mobile flow, audio, placements, showcase
 
 ## How to use
 Paste the URL of any file into a Claude conversation to load its contents as context. Or reference the whole repo at the start of a session: "refer to my knowledge base at github.com/gpmdyg9b4z-spec/knowledge-base".

@@ -1,56 +1,66 @@
 # Backlog
 
-The running to-do list across all projects. Ranked by value to Getty sales and then by effort. **Owner**: *you* = needs your login, decision or Mac; *Claude* = a session can do it on a branch for you to approve.
+The running to-do list across all projects, ranked by value to Getty sales and then by effort. **Owner**: *you* = needs your login, decision or Mac; *Claude* = a session can do it on a branch for you to approve.
 
 Status: ☐ to do · ◐ in progress / awaiting your review · ☑ done
 
-## Decisions for you
+## Your next steps (each takes a few minutes, on the phone)
 
-These block the items below. Answer any time, here or in a session.
+1. **Make `knowledge-base` private:** GitHub → knowledge-base → Settings → General → Danger Zone → *Change visibility* → Private. Do this **before** merging PR #1. The sales figures were public before, so they may already be cached elsewhere; making the repo private stops further exposure.
+2. **Delete `expert-octo-spoon`:** GitHub → expert-octo-spoon → Settings → Danger Zone → *Delete this repository*.
+3. **Archive `photo-metadata-tool`:** GitHub → photo-metadata-tool → Settings → Danger Zone → *Archive this repository* (it becomes read-only; nothing is lost).
+4. **Review and merge** on-foot-blog PR #13 and knowledge-base PR #1.
+5. **Paste the Getty project's instructions** into a session, so `getty/metadata-rules.md` can match them.
+6. **Make a Getty board** of 30–50 of your strongest pictures and send its read-only link (for the blog's About page).
 
-1. **Getty rulebook**: which is current? Dateline `Kensington, London — 7 March 2026:` or `London, England, United Kingdom – 14 February 2026.`; exactly 50 keywords or 40–55; include `Colour Image` and geography compounds or leave them out? Or should I take whatever the Getty project on claude.ai says now? (review §1)
-2. **knowledge-base visibility**: make it private, or keep it public and move the sales figures out? (§2)
-3. **Metadata tool**: has the Getty project replaced it? Archive it, or update it? (§6)
-4. **Blog photo size**: make 1200px the largest size served for new posts? (§3.3)
-5. **Street Name Plates**: still a priority? Borough convention: any pre-1965 authority, or LCC metropolitan boroughs only? (§5)
-6. **Delete `expert-octo-spoon`** (empty)?
+## Decisions taken (28 Nov 2026)
+
+- The Getty project's rules are current → the knowledge-base copy will follow them (item 3).
+- knowledge-base goes private (you; step 1 above).
+- The Getty project has replaced the metadata tool → archive it (step 3).
+- Blog photos capped at 1200px → done in PR #13.
+- Street Name Plates: not a priority; pick it up once everything is linked.
+- Delete expert-octo-spoon (step 2).
 
 ## Now
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 1 | Blog: photo copies made by the Action; sitemap, RSS and robots.txt | Claude | ◐ PR on `on-foot-blog` |
-| 2 | knowledge-base: hub, fixed README links, up-to-date plates schema and blog format | Claude | ◐ PR on `knowledge-base` |
-| 3 | Settle the Getty rulebook (decision 1), then rewrite `getty/metadata-rules.md` as the single source | you → Claude | ☐ |
-| 4 | Make knowledge-base private, or move the sales tables out (decision 2) | you | ☐ |
-| 5 | Blog: list photos with no Getty link on every build (a submission queue: 73 photos now) | Claude | ◐ in the `on-foot-blog` PR |
-| 6 | Blog: "shoot context" pack per walk for the Getty project (stops, dates, names, geography compounds) | Claude | ☐ |
-| 7 | Blog: add the Getty portfolio link to About (send the URL) | you → Claude | ☐ |
+| 1 | Blog: Action makes photo copies; 1200px cap; sitemap, RSS; Getty-link check | Claude | ◐ PR #13 |
+| 2 | knowledge-base hub, review, plan; README links; plates schema; blog format | Claude | ◐ PR #1 |
+| 3 | Replace `getty/metadata-rules.md` with the Getty project's current rules | you (paste) → Claude | ☐ |
+| 4 | Mobile flow: a `Getty Inbox` album in Lightroom mobile (plan §4) | you | ☐ |
+| 5 | Getty portfolio board, then add the link to the blog's About page (plan §8) | you → Claude | ☐ |
+| 6 | Photos with no Getty link: 73 in 22 posts, listed by every build. Submit them or add the links | you | ☐ |
+| 7 | Old DeepMeta folders: paste a listing and I'll draft the triage (plan §3) | you → Claude | ☐ |
 
 ## Next
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 8 | Street Name Plates: `getty_id` per plate and a Getty link in each popup; commit `plates_data.json` | you (IDs) + Claude | ☐ |
-| 9 | Metadata tool: current model, settled rules, vocabulary file in the prompt, location-aware dateline (or archive it) | Claude | ☐ |
-| 10 | Blog analytics (GoatCounter) and Google Search Console sitemap | you (accounts) + Claude | ☐ |
-| 11 | London List: "planner is N days old" warning; one-click `refresh.command` | Claude | ☐ |
-| 12 | Remove the duplicate vocabulary file from photo-metadata-tool and link to the knowledge-base copy | Claude | ☐ |
-| 13 | A `CLAUDE.md` in london-list, street-name-plates and photo-metadata-tool pointing at this hub | Claude | ☐ |
+| 8 | Release routine: blank Getty model releases on the phone; one creative brief a month (plan §2) | you | ☐ |
+| 9 | "Seen in" record: back catalogue from the Flickr album or screenshots, then a blog page (plan §6) | you (export) + Claude | ☐ |
+| 10 | Self-guided walks on the blog (NotebookLM itineraries), with a homepage filter (plan §7) | Claude | ☐ |
+| 11 | Audio → post: private `on-foot-notes` repo plus a transcription Action (plan §5) | Claude + you (repo, key) | ☐ |
+| 12 | "Shoot context" pack per walk for the Getty project (review §3.1) | Claude | ☐ |
+| 13 | Blog analytics (GoatCounter) and Google Search Console sitemap | you (accounts) + Claude | ☐ |
+| 14 | London List: "planner is N days old" warning; one-click refresh | Claude | ☐ |
 
 ## Later
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 14 | "Where next?": weigh by subject sales and Getty supply, not just area | Claude | ☐ |
-| 15 | "Where next?": events calendar (Open House, LFA, seasonal) for timely editorial | Claude + you | ☐ |
-| 16 | One London gazetteer (`london/places.json`) read by the blog, London List, plates and Getty geography | Claude | ☐ |
-| 17 | Private per-photo index (asset ID ↔ shoot ↔ walk ↔ plate ↔ sales) | you (data) + Claude | ☐ |
-| 18 | Quarterly feedback note: best sellers, under-supplied subjects, posts that send readers to Getty | Claude | ☐ |
-| 19 | Blog series pages and a monthly newsletter from the RSS feed | Claude | ☐ |
+| 15 | Personal dashboard page: this week, decisions, pipeline counts, Seen in (plan §9) | Claude | ☐ |
+| 16 | Back catalogue: Flickr photos never submitted to Getty | you + Claude | ☐ |
+| 17 | "Where next?": weigh by subject sales, Getty supply and events | Claude | ☐ |
+| 18 | One London gazetteer read by the blog, London List, plates and Getty geography | Claude | ☐ |
+| 19 | Street Name Plates: Getty links per plate; commit `plates_data.json` | you (IDs) + Claude | ☐ |
+| 20 | Private per-photo index (asset ID ↔ shoot ↔ walk ↔ plate ↔ sales) | you (data) + Claude | ☐ |
 
 ## Done
 
 | Date | Item |
 |---|---|
 | 27 Nov 2026 | First cross-project review ([review-2026-11.md](review-2026-11.md)) |
+| 28 Nov 2026 | Plan answering licences, mobile flow, audio, placements, showcase ([plan-2026-11-28.md](plan-2026-11-28.md)) |
+| 28 Nov 2026 | Blog photos capped at 1200px (served images 438 MB → 168 MB) |
